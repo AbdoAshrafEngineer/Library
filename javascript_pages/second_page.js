@@ -18,7 +18,7 @@ const books_info = [];
 
 const bookNameRegex = /^[A-Za-z0-9\s'’-]+$/;
 const priceRegex = /^(?:\$|€|EGP)?\s?\d+(\.\d{1,2})?$/;
-const authorNameRegex = ^[A-Za-z]\.( [A-Za-z]+(['-]?[A-Za-z]+)*)+$;
+const authorNameRegex = /^(?:[A-Za-z]+(?:['-]?[A-Za-z]+)*|[A-Za-z]\.)(?:\s+(?:[A-Za-z]+(?:['-]?[A-Za-z]+)*|[A-Za-z]\.))*$/;
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const bookNameError = document.getElementById("bookNameError");
